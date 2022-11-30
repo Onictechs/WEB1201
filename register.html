@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>register</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="textbox.css">-->
+  
+</head>
+<body>
+  <main>
+    <div class="wrapper light">
+      <!--<img src="./pics/shape.png" alt="shape" class="shape">-->
+
+      <!--navigation bar-->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="./pics/kodamatwo.png" alt="logo"></a>
+            <a href="index.html"><h3>mentas</h3></a>
+          </div>
+          <div class="navlinks">
+            <ul>
+              <li><a href="about.html">about</a></li>
+              <li><a href="resources.html">resources</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="register.html" class="button">register</a></li>
+            </ul>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="burgermenu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+
+
+      
+      <!--main content-->
+      <div class="form-wrapper">
+        <div class="form-container">
+          <form action="#" class="login">
+            <h2 class="bigtext">login with your account</h2>
+            <div class="form-content">
+              <label for="email">email</label>
+              <div class="userinput">
+                <input type="email" id="email" placeholder="ex: johndoe@email.com" required> 
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+            </div>
+
+            <div class="form-content">
+              <label for="password">password</label>
+              <div class="userinput">
+                <input type="password" id="password" pattern=".{8,}" placeholder="your password" required>
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <span class="help">at least 8 characters</span>
+            </div>
+
+            <button type="submit" class="submittingbutton">login</button>
+            <!--<a href="#">forgot password?</a> <br><br>-->
+            <p>don't have an account?</p> <a href="#" onclick="switchForm('register', event)">register</a>
+          </form>
+
+          <form action="#" class="register activated">
+            <h2 class="bigtext">register a new account</h2>
+
+            <div class="form-content">
+              <label for="email">email</label>
+                <div class="userinput">
+                  <input type="email" id="email" placeholder="e.x: johndoe@email.com" required>
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="form-content">
+              <label for="password"></label>
+              <div class="userinput">
+                <input type="password" pattern=".{8,}" id="password" placeholder="password" required>
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <span class="help">at least 8 characters</span>
+            </div>
+
+            <div class="form-content">
+                  <div class="userinput">
+                    <input type="password" id="confirm-pass" placeholder="confirm your password" required>
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                  <span class="help">passwords must match!</span>
+            </div>
+
+            <button type="submit" class="submittingbutton">register</button>
+            <p>already have an account?</p> <a href="#" onclick="switchForm('login', event)">login</a>
+          </form>
+        </div>
+      </div>
+
+
+      <!--dark and light theme button-->
+      <div class="endcontent">
+        <div class="container">
+          <button class="togglebutton">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-regular fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/0e06f04ff1.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>

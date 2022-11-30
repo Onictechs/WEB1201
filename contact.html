@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="textbox.css">-->
+  
+</head>
+<body>
+  <main>
+    <div class="wrapper light">
+      <!--<img src="./pics/shape.png" alt="shape" class="shape">-->
+
+      <!--navigation bar-->
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="./pics/kodamatwo.png" alt="logo"></a>
+            <a href="index.html"><h3>mentas</h3></a>
+          </div>
+          <div class="navlinks">
+            <ul>
+              <li><a href="about.html">about</a></li>
+              <li><a href="resources.html">resources</a></li>
+              <li><a href="contact.html" class="active">contact</a></li>
+              <li><a href="register.html" class="button">register</a></li>
+            </ul>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="burgermenu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+
+
+      
+      <!--main content-->
+      <div class="contact-us">
+        <h1>contact us</h1>
+        <p>send us your thoughts!</p>
+        <form action="contact.php" method="POST">
+            <label for="name">name/username:</label>
+            <input type="text" name="name" id="name" placeholder="usernames are also allowed for privacy sake" required>
+
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" placeholder="ex: johndoe@mail.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*${2,}" required>
+
+            <label for="subject">subject:</label>
+            <input type="text" name="subject" id="subject">
+
+            <label for="phone">phone(optional):</label>
+            <input type="text" name="phone" id="phone">
+
+            <label for="message">message:</label>
+            <textarea name="message" cols="30" rows="5" required></textarea>
+            <input type="submit" value="send it!">
+        </form>
+      </div>
+
+
+      <!--dark and light theme button-->
+      <div class="endcontent">
+        <div class="container">
+          <button class="togglebutton">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-regular fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/0e06f04ff1.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
